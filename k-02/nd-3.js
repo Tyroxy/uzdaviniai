@@ -111,8 +111,18 @@ o reikšmės – atsitiktiniai skaičiai nuo 5 iki 75. Surasti didžiausią skai
 
 console.log('------ 3.25 Uzduotis ------')
 
+const arr25 = []; 
 
+for (let i = 0; i < 20; i++){
+    const temp25 = []; 
+    for (let j = 0; j < rand(5, 18); j++){
+        temp25.push(rand(5, 75));     
+}
+  arr25.push(temp25);
+}
 
+console.log('Sugeneruotas dvisluoksnis masyvas su reiksmemis nuo 5 iki 30:', arr25);
+console.log('Didziausia viso didziojo masyvo skaiciaus reiksme:', Math.max(...temp25);
 
 console.log('*****************************');
 
