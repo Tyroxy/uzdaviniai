@@ -32,11 +32,7 @@ for (let i = 0; i < 20; i++){
   arr21.push(temp21);
 }
  
-console.log('Sugeneruotas dvisluoksnis masyvas:', arr21);
-
-
-
-
+console.log('Sugeneruotas dvisluoksnis masyvas su reiksmemis nuo 1 iki 10:', arr21);
 
 
 console.log('*****************************');
@@ -49,9 +45,17 @@ console.log('*****************************');
 
 console.log('------ 3.22 Uzduotis ------')
 
+const arr22 = []; 
 
+for (let i = 0; i < 20; i++){
+    const temp22 = []; 
+    for (let j = 1; j < 11; j++){
+        temp22.push(rand(1, 17));     
+}
+  arr22.push(temp22);
+}
 
-
+console.log('Sugeneruotas dvisluoksnis masyvas su reiksmemis nuo 1 iki 17:', arr22);
 
 
 console.log('*****************************');
