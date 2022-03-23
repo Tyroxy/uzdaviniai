@@ -242,21 +242,21 @@ console.log('------ 2.20 Uzduotis ------')
 let arr20 = [];
 let char2 = 'MNOP';
 
-
-
-
 for (let i = 0; i < 100; i++){
     arr20.push(char2.charAt(Math.floor(Math.random() * char2.length)));
-
 }
 
 console.log('Sugeneruotas M, N, O, P raidziu masyvas:',arr20);
 
+console.log('-------------------------------------')
+
+
 const arr222 = []; 
 arr222.push(arr20);
 arr222[arr20.sort()];
-console.log(arr222);
+console.log('Isrusiuotas M, N, O, P raidziu masyvas:', ...arr222);
 
+console.log('-------------------------------------')
 
 const arr20m = ['M'];
 const arr20n = ['N'];
@@ -264,6 +264,8 @@ const arr20o = ['O'];
 const arr20p = ['P'];
 
 const arr200 =[];
+const arr201 =[];
+
 
 let m = 0;
 let n = 0;
@@ -292,10 +294,15 @@ arr20p.push(p);
 
 
 
+
+
+
 console.log(arr20m);
 console.log(arr20n);
 console.log(arr20o);
 console.log(arr20p);
+
+console.log('-------------------------------------')
 
 arr200.push(arr20m);
 arr200.push(arr20n);
@@ -304,6 +311,42 @@ arr200.push(arr20p);
 
 console.log(arr200);
 
+console.log('-------------------------------------')
+
+arr201.push(...arr20m, ...arr20n, ...arr20o, ...arr20p);
+
+
+console.log(arr201);
+
+// let maxar = ['', 0];
+
+// for (let i = 0; i < 20; i++){
+// if (arr20m[1] > arr20n[1]){
+//     maxar = arr20m;
+// } else if (arr20n[1] > arr20o[1]){
+//     maxar = arr20n;
+// } else if (arr20o[1] > arr20p[1]){
+//     maxar = arr20o;
+// } else if (arr20p[1] > arr20m[1]){
+//     maxar = arr20p;
+// }
+// }
+// console.log(maxar);
+
+
+
+
+
+
+
+
+
+
+// !!! NEBAIGTA
+
+// Kurios raidės daugiausia? Nueinate i konsole ir pasiziurite...
+
+// Arba galima suskaiciuoti - yra isrusiuotas masyvas :)
 
 
 console.log('*****************************');
