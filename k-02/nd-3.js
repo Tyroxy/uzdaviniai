@@ -49,7 +49,7 @@ const arr22 = [];
 
 for (let i = 0; i < 20; i++){
     const temp22 = []; 
-    for (let j = 1; j < 11; j++){
+    for (let j = 0; j < 10; j++){
         temp22.push(rand(1, 17));     
 }
   arr22.push(temp22);
@@ -67,19 +67,39 @@ console.log('*****************************');
 
 console.log('------ 3.23 Uzduotis ------')
 
+const arr23 = []; 
 
+for (let i = 0; i < 20; i++){
+    const temp23 = []; 
+    for (let j = 0; j < rand(5, 18); j++){
+        temp23.push(j + 1);     
+}
+  arr23.push(temp23);
+}
+
+console.log('Sugeneruotas dvisluoksnis masyvas su reiksmemis nuo 1 iki masyvo ilgio:', arr23);
 
 
 console.log('*****************************');
 
 /*
 24.Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių ilgis atsitiktinis
- nuo 5 iki 18, o reikšmės – atsitiktiniai skaičiai nuo 5 iki 30
+ nuo 5 iki 18, o reikšmės – atsitiktiniai skaičiai nuo 5 iki 30.
 */
 
 console.log('------ 3.24 Uzduotis ------')
 
+const arr24 = []; 
 
+for (let i = 0; i < 20; i++){
+    const temp24 = []; 
+    for (let j = 0; j < rand(5, 18); j++){
+        temp24.push(rand(5, 30));     
+}
+  arr24.push(temp24);
+}
+
+console.log('Sugeneruotas dvisluoksnis masyvas su reiksmemis nuo 5 iki 30:', arr24);
 
 
 console.log('*****************************');
