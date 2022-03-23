@@ -293,10 +293,6 @@ arr20o.push(o);
 arr20p.push(p);
 
 
-
-
-
-
 console.log(arr20m);
 console.log(arr20n);
 console.log(arr20o);
