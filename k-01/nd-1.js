@@ -19,11 +19,23 @@ console.log('============ Uzdaviniai 1 dalis ===========')
 
 console.log('------ 1.1 Uzduotis ------')
 
+console.log('--- 1 var. ----')
+
+let num1 = rand(0, 100);
+let num2 = rand(0, 100);
+let num3 = rand(0, 100);
+let num4 = rand(0, 100);
+
+console.log('Keturi atsitiktiniai skaiciai:', num1, num2, num3, num4)
+
+console.log('--------------------------------------------')
+
+console.log('--- 2 var. ----')
+
 console.log('Keturi atsitiktiniai skaiciai:');
 for (let i = 0; i < 4; i++) {
     console.log(rand(0, 100));
 }
-
 
 console.log('*****************************');
 
@@ -33,40 +45,49 @@ console.log('*****************************');
 
 console.log('------ 1.2 Uzduotis ------')
 
-console.log('Keturi atsitiktiniai skaiciai:');
+console.log('--- 1 var. ----')
 
+let num21 = rand(0, 100);
+let num22 = rand(0, 100);
+let num23 = rand(0, 100);
+let num24 = rand(0, 100);
 
-// for (let i = 0; i < 4; i++) {
-//     console.log(rand(0, 100));
-//     const sk2 = 0;
-//     if (sk2[i] % 2 === 0) {
-//         sk2[i] = sk2[i] * 2;
+console.log('Keturi atsitiktiniai skaiciai:', num21, num22, num23, num24);
 
-//     } else {
-//         sk2[i] = sk2[i];
-             
-//     }
-//     console.log(sk2[i]);
-// }
+console.log('--------------------------------------------')
 
-let s3 = 0;
-for (let i = 0; i < 4; i++) {
-    
-    console.log(s3[i] = rand(0, 100));
- 
-    if (s3[i] % 2 !== 0) {
-        console.log(s3[i] * 2);
-
-    } else {
-        console.log(s3[i]);
-    }
-   
+if (num21 % 2 !== 0) {
+    num21 *= 2;
+}
+if (num22 % 2 !== 0) {
+    num22 *= 2;
+}
+if (num23 % 2 !== 0) {
+    num23 *= 2;
+}
+if (num24 % 2 !== 0) {
+    num24 *= 2;
 }
 
+console.log('Pakeisti nelyginiai skaiciai:', num21, num22, num23, num24)
 
+console.log('--------------------------------------------')
 
+console.log('--- 2 var. ----')
+
+let s3 = [];
+for (let i = 0; i < 4; i++) {
+    console.log('Pirminis skaicius:', s3[i] = rand(0, 100));
+    if (s3[i] % 2 !== 0) {
+        console.log('Pakeistas skaicius:', s3[i] * 2);
+    } else {
+        console.log('Pakeistas skaicius:', s3[i]);
+    }
+   console.log('---------------------');
+}
 
 console.log('*****************************');
+
 
 // 3.Sugeneruoti atsitiktinį skaičių nuo 1 iki 7. Atitinkamai pagal skaičių parašyti, kokia tai savaitės diena.
 
@@ -77,40 +98,26 @@ let diena = rand(1, 7);
 
 if (diena === 1) {
     console.log('pirmadienis');
-} else {
-    if (diena === 2) {
-        console.log('antradienis');
-    } else {
-        if (diena === 3) {
-            console.log('treciadienis');
-        } else {
-            if (diena === 4) {
-                console.log('ketvirtadienis');
-            } else {
-                if (diena === 5) {
-                    console.log('penktadienis');
-                } else {
-                    if (diena === 6) {
-                        console.log('sestadienis');
-                    } else {
-                        if (diena === 7) {
-                            console.log('sekmadienis');
-                        }
-                    }
-                }
-            }
-        }
-    }
+} else if (diena === 2) {
+    console.log('antradienis');
+} else if (diena === 3) {
+    console.log('treciadienis');
+} else if (diena === 4) {
+    console.log('ketvirtadienis');
+} else if (diena === 5) {
+    console.log('penktadienis');
+} else if (diena === 6) {
+    console.log('sestadienis');
+} else if (diena === 7) {
+    console.log('sekmadienis');
 }
-
-
-
+   
 console.log('*****************************');
+
 
 // 4.Trečią uždavinį perdaryti taip, kad rodytų, kokia tai savaitės diena (1-5 –darbo diena, 6-7 –savaitgalis).
 
 console.log('------ 1.4 Uzduotis ------')
-
 
 if (diena <= 5) {
     console.log('Darbo diena');
@@ -120,34 +127,22 @@ if (diena === 6 || diena === 7) {
     }
 }
 
-
-
+// console.log('--- 2 var. ----')
 /*
 switch (diena) {
-    case 1:
-        console.log('Darbo diena');
+    case 1: console.log('Darbo diena');
         break;
-    case 2:
-         console.log('Darbo diena');
+    case 2: console.log('Darbo diena');
         break;
-
-    case 3:
-        console.log('Darbo diena');
+    case 3: console.log('Darbo diena');
         break;
-
-    case 4:
-        console.log('Darbo diena');
+    case 4: console.log('Darbo diena');
         break;
-    case 5:
-        console.log('Darbo diena');
+    case 5: console.log('Darbo diena');
         break;
-
-    case 6:
-        console.log('Savaitgalis');
+    case 6: console.log('Savaitgalis');
         break;
-
-    case 7:
-        console.log('Savaitgalis');
+    case 7: console.log('Savaitgalis');
         break;
 }
 */
@@ -156,8 +151,8 @@ console.log('*****************************');
 
 /*
 5.Sugeneruoti keturis atsitiktinius skaičius nuo 0 iki 100.Skaičiai dalūs iš 3 turi būti
-atvaizduoti žaliai, turintys dalybos iš trijų liekaną vienetą –geltonai,
-turintys dalybos iš trijų liekaną dvejetą –raudonai.
+atvaizduoti žaliai, turintys dalybos iš trijų liekaną vienetą – geltonai,
+turintys dalybos iš trijų liekaną dvejetą – raudonai.
 */
 
 console.log('------ 1.5 Uzduotis ------')
@@ -165,20 +160,22 @@ console.log('------ 1.5 Uzduotis ------')
 console.log('Keturi atsitiktiniai skaiciai:');
 
 
-let s5 = 0;
+let s5 = [];
 for (let i = 0; i < 4; i++) {
-    s5[i] = rand(0, 100);
-    console.log((s5[i]) = rand(0, 100));
+    //s5[i] = rand(0, 100);
     //console.log(s5[i]);
+    console.log(`Pirminis skaicius -${i+1}-:`, (s5[i]) = rand(0, 100));
+    
     if ((s5[i]) % 3 === 0) {
-        console.log(`${s5[i]} zalia`);
+        console.log(`%cZalias skaicius ${s5[i]} `, "color: green");
     }    
     if ((s5[i]) % 3 === 1) {
-        console.log(`${s5[i]} geltona`);
+        console.log(`%cGeltonas skaicius ${s5[i]}`, "color: yellow");
     } 
     if ((s5[i]) % 3 === 2) {
-        console.log(`${s5[i]} raudona`);
+        console.log(`%cRaudonas skaicius ${s5[i]}`, "color: red");
     }
+    console.log('--------------------------------------------')
 }
 
 console.log('*****************************');
@@ -189,15 +186,18 @@ console.log('*****************************');
 console.log('------ 1.6 Uzduotis ------')
 
 
-const ar = [];
 for (let i = 0; i < 21; i++) {
     console.log(i);
-
-    ar.push(i);
 }
 
 console.log('---------------------------')
 
+console.log('--- 2 var. ---> masyvas ----')
+
+const ar = [];
+for (let i = 0; i < 21; i++) {
+    ar.push(i);
+}
 console.log(ar);
 
 
@@ -208,17 +208,30 @@ console.log('*****************************');
 
 console.log('------ 1.7 Uzduotis ------')
 
-const ar1 = [];
-for (let i = 0; i < 51; i++) {
-    if (i % 2 === 0) {
-    
-        console.log(i);
-
-        ar1.push(i);
-    }
+for (let i = 0; i < 51; i+=2) {
+    console.log(i);
 }
 
+/*
 console.log('---------------------------')
+
+console.log('--- 3 var. ----')
+
+for (let i = 0; i < 51; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+*/
+
+console.log('---------------------------')
+
+console.log('--- 2 var. ---> masyvas ----')
+
+const ar1 = [];
+for (let i = 0; i < 51; i+=2) {
+    ar1.push(i);
+}
 
 console.log(ar1);
 
@@ -230,20 +243,16 @@ console.log('*****************************');
 
 console.log('------ 1.8 Uzduotis ------')
 
-for (let i = 0; i < 51; i++) {
-    if (i % 2 === 0) {
-        if (i % 6 ===0){
-            console.log(`${i} melynas`);
+for (let i = 0; i < 51; i+=2) {
+    if (i % 6 === 0){
+        console.log(`%c${i} melynas skaicius`, "background-color: yellow; color: blue; font-weight: bold");
     } else {
         console.log(i)
     }
-    } 
 }
 
-
-
-
 console.log('*****************************');
+
 
 // 9. Generuoti atsitiktinius skaičius nuo 1 iki 50 tol, kol sugeneruotas skaičius bus dalus iš 5.
 
@@ -255,8 +264,8 @@ while (sk9 % 5 !== 0) {
     console.log(sk9);
 }
 
-
 console.log('*****************************');
+
 
 // +10. Generuoti atsitiktinius skaičius nuo 1 iki 100 tol, kol sugeneruotas skaičius bus dalus iš 5 arba iš 11.
 
@@ -267,7 +276,6 @@ while (sk10 % 11 !== 0 && sk10 % 5 !== 0 ) {       // kodel && , o ne ||   ?????
     sk10 = rand(1, 100)
     console.log(sk10);
 }
-
 
 
 console.log('*****************************');
