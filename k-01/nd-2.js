@@ -314,25 +314,31 @@ arr201.push(...arr20m, ...arr20n, ...arr20o, ...arr20p);
 
 console.log(arr201);
 
-// let maxar = ['', 0];
-
-// for (let i = 0; i < 20; i++){
-// if (arr20m[1] > arr20n[1]){
-//     maxar = arr20m;
-// } else if (arr20n[1] > arr20o[1]){
-//     maxar = arr20n;
-// } else if (arr20o[1] > arr20p[1]){
-//     maxar = arr20o;
-// } else if (arr20p[1] > arr20m[1]){
-//     maxar = arr20p;
-// }
-// }
-// console.log(maxar);
+let maxar = ['', 0];
 
 
+if (arr20m[1] > arr20n[1] && arr20m[1] > arr20o[1] && arr20m[1] > arr20p[1]){
+    maxar = arr20m;
+} else if (arr20n[1] > arr20m[1] && arr20n[1] > arr20o[1] && arr20n[1] > arr20p[1]){
+    maxar = arr20n;
+} else if (arr20o[1] > arr20m[1] && arr20o[1] > arr20n[1] && arr20o[1] > arr20p[1]){
+    maxar = arr20o;
+} else if (arr20p[1] > arr20m[1] && arr20p[1] > arr20n[1] && arr20p[1] > arr20o[1]){
+    maxar = arr20p;
+}
 
-
-
+if (arr20m === maxar){
+    console.log('Daugiausia buvo raidziu', maxar);
+}
+if (arr20n === maxar){
+    console.log('Daugiausia buvo raidziu', maxar);
+}
+if (arr20o === maxar){
+    console.log('Daugiausia buvo raidziu', maxar);
+}
+if (arr20p === maxar){
+    console.log('Daugiausia buvo raidziu', maxar);
+}
 
 
 
