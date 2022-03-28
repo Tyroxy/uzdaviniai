@@ -11,10 +11,18 @@ console.log('============ Uzdaviniai 1 dalis ===========')
 // 5 != '5' false
 // 5 !== '5' true
 
+/*
+! -- 
+> -- <=
+< -- >=
+== -- !=
+&& -- ||
+false -- true
+*/
 
 
 
-// 1.Sugeneruoti keturis atsitiktinius skaičius nuo 0 iki 100.Atspausdinti juos į ekraną.
+// 1.Sugeneruoti keturis atsitiktinius skaičius nuo 0 iki 100. Atspausdinti juos į ekraną.
 
 
 console.log('------ 1.1 Uzduotis ------')

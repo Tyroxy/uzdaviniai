@@ -11,7 +11,14 @@ console.log('============ Uzdaviniai 2 dalis ===========')
 // 5 != '5' false
 // 5 !== '5' true
 
-
+/*
+! -- 
+> -- <=
+< -- >=
+== -- !=
+&& -- ||
+false -- true
+*/
 
 
 // 11. Generuoti atsitiktinius skaičius nuo 1 iki 10 tol, kol jų suma bus lygi arba didesnė 150. 
