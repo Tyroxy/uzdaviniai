@@ -397,9 +397,9 @@ arr291 = arr29.flat(1)
 
 console.log('Pradinis dvisluoksnis masyvas su reiksmemis nuo 1 iki 17:', arr29);
 console.log('----------------------------------------------------------------------')
-console.log('Transformuotas vienmatis masyvas:', arr291);
+console.log('Transformuotas (su flat) vienmatis masyvas:', arr291);
 console.log('----------------------------------------------------------------------')
-console.log('Transformuotas vienmatis masyvas:', arr292);
+console.log('Kitu budu (su spread) transformuotas vienmatis masyvas:', arr292);
 
 
 
