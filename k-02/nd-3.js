@@ -417,6 +417,85 @@ aritmetinis vidurkis.
 console.log('------ 3.30 Uzduotis ------')
 
 
+const arr30 = []; 
+const arr301 = [];
+let arr302 = [];
+
+
+
+
+
+
+for (let i = 0; i < 9; i++){
+    const temp30 = [];
+    for (let j = 0; j < 9; j++){
+        temp30.push(rand(1, 17));
+}
+    
+    arr30.push(temp30);
+    
+    arr301.push(...(temp30));
+    
+}
+
+arr302 = [...arr301]
+
+arr302.sort(function(a, b){return a-b});
+
+let sum = 0;
+arr301.forEach(n => sum += n);
+
+let aver = 0;
+aver = sum / arr301.length;
+
+let mediana = 0;
+let n = arr302.length
+
+
+console.log('Pradinis dvisluoksnis masyvas su reiksmemis nuo 1 iki 17:', arr30);
+console.log('----------------------------------------------------------------------')
+console.log('Kitu budu (su spread) transformuotas vienmatis masyvas:', arr301);
+console.log('----------------------------------------------------------------------')
+console.log('Isrusiuotas pagal reiksmiu dydi vienmatis masyvas:', arr302);
+console.log('----------------------------------------------------------------------')
+
+console.log('Vienmacio masyvo visu reiksmiu suma:', sum);
+console.log('----------------------------------------------------------------------')
+
+console.log('Vienmacio masyvo visu reiksmiu aritmetinis vidurkis:', aver);
+
+console.log('----------------------------------------------------------------------')
+console.log('masyvo ilgis -', n);
+
+
+if (arr302.length % 2 !== 0){
+    mediana = arr302[(n + 1) / 2];
+    console.log('Masyvo vidurys yra:', (n+1)/2);
+    
+    } else {
+
+    mediana = (arr302[n/2] + arr302[(n/2) + 1])/2;
+    console.log('Masyvo vidurio pirmas nr.:', arr302[n/2]);
+    console.log('Masyvo vidurio antras nr.:', arr302[(n/2)+1]);
+}
+
+console.log('----------------------------------------------------------------------')
+
+console.log('Vienmacio masyvo imties mediana:', mediana);
+
+console.log('----------------------------------------------------------------------')
+
+if (aver > mediana){
+    console.log('Aritmetinis vidurkis yra daugiau uz mediana: daugiau', aver - mediana);
+    console.log(aver, '>', mediana);
+} else if (aver < mediana){
+    console.log('Aritmetinis vidurkis yra maziau uz mediana: maziau', mediana - aver);
+    console.log(aver, '<', mediana);
+} else {
+    console.log('Aritmetinis vidurkis ir masyvo mediana yra lygus:', mediana, '=', aver);
+}
+
+
 console.log('*****************************');
 
 
