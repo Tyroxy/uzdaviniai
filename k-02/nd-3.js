@@ -378,6 +378,32 @@ dvimačio masyvo masyvų reikšmes perkelti į naują masyvą.
 console.log('------ 3.29 Uzduotis ------')
 
 
+const arr29 = []; 
+let arr291 = [];
+let arr292 = [];
+
+for (let i = 0; i < 10; i++){
+    const temp29 = [];
+    for (let j = 0; j < 10; j++){
+        temp29.push(rand(1, 17));
+}
+    
+    arr29.push(temp29);
+    
+    arr292.push(...(temp29));
+}
+
+arr291 = arr29.flat(1)
+
+console.log('Pradinis dvisluoksnis masyvas su reiksmemis nuo 1 iki 17:', arr29);
+console.log('----------------------------------------------------------------------')
+console.log('Transformuotas vienmatis masyvas:', arr291);
+console.log('----------------------------------------------------------------------')
+console.log('Transformuotas vienmatis masyvas:', arr292);
+
+
+
+
 console.log('*****************************');
 
 
@@ -783,6 +809,36 @@ for (let i = 2; i <= n; i++) { // Для всех i...
   alert( i ); // простое число
 }
 
+-----------------------------------------------------------------------------------
+
+
+const array = [1, [2, [3]]];
+
+array.flat();
+// [1, 2, [3]]
+
+
+array.flat(1);
+// [1, 2, [3]]
+
+
+array.flat(Infinity);
+// [1, 2, 3]
+
+
+------------------------------------------------------------------------------------
+
+const duplicate = x => [x, x];
+[2, 3, 4].map(duplicate);
+// [[2, 2], [3, 3], [4, 4]]
+
+
+[2, 3, 4].map(duplicate).flat(); 
+// [2, 2, 3, 3, 4, 4]
+
+
+[2, 3, 4].flatMap(duplicate); 
+// [2, 2, 3, 3, 4, 4]
 
 
 */
