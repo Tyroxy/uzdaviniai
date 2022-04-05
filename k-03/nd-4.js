@@ -362,8 +362,8 @@ function tikrina (q, r) {
 }
 
 
-console.log(tikrina([8, 5, 3, -9, 'hi', 0, 25, 'ei', 8, 1], 5));
-console.log(tikrina(5, [8, 5, 3, -9, -52.3, 0, 25, 65, 8, 1]));
+// console.log(tikrina([8, 5, 3, -9, 'hi', 0, 25, 'ei', 8, 1], 5));
+// console.log(tikrina(5, [8, 5, 3, -9, -52.3, 0, 25, 65, 8, 1]));
 
 
 console.log('*****************************');
