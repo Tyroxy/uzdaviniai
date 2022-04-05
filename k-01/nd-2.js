@@ -259,9 +259,9 @@ console.log('-------------------------------------')
 
 
 const arr222 = []; 
-arr222.push(arr20);
-arr222[arr20.sort()];
-console.log('Isrusiuotas M, N, O, P raidziu masyvas:', ...arr222);
+arr222.push(...arr20);
+arr222[arr222.sort()];
+console.log('Isrusiuotas M, N, O, P raidziu masyvas:', arr222);
 
 console.log('-------------------------------------')
 
@@ -350,12 +350,6 @@ if (arr20p === maxar){
 
 
 
-
-// !!! NEBAIGTA
-
-// Kurios raidės daugiausia? Nueinate i konsole ir pasiziurite...
-
-// Arba galima suskaiciuoti - yra isrusiuotas masyvas :)
 
 
 console.log('*****************************');

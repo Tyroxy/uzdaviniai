@@ -426,9 +426,9 @@ let arr302 = [];
 
 
 
-for (let i = 0; i < 9; i++){
+for (let i = 0; i < 10; i++){
     const temp30 = [];
-    for (let j = 0; j < 9; j++){
+    for (let j = 0; j < 10; j++){
         temp30.push(rand(1, 17));
 }
     
@@ -475,8 +475,8 @@ if (arr302.length % 2 !== 0){
     } else {
 
     mediana = (arr302[n/2] + arr302[(n/2) + 1])/2;
-    console.log('Masyvo vidurio pirmas nr.:', arr302[n/2]);
-    console.log('Masyvo vidurio antras nr.:', arr302[(n/2)+1]);
+    console.log('Masyvo vidurio pirma reiksme:', arr302[n/2], 'ir nr. -', arr302.length / 2);
+    console.log('Masyvo vidurio antra reiksme:', arr302[(n/2)+1], 'ir nr. -', arr302.length / 2 + 1);
 }
 
 console.log('----------------------------------------------------------------------')
